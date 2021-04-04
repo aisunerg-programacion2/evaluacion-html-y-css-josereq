@@ -1,14 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae</title>
-</head>
-<body>
-  
-  <h1>Curriculum Vitae</h1>
+<html>
+	<head>
+		<title>CV Jósé Requena</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
 
-</body>
+			aside img{
+				margin-top: 20px;
+				width:250px;
+				height: 200px;
+				border-radius: 100px;
+				border: solid 4px white;
+			}
+
+			body{
+				background-color: #1e1e1c;
+			}
+
+			aside div h4{
+				margin-left: 75px;
+				font-family: "helvetica";
+				color: white;
+			}
+			#ocupacion{
+				margin-left: 65px;
+				background-color: #ec3030;
+				border-radius: 10px;
+
+				width: 50%;
+				color: white;
+				height: 30px;
+			}
+
+			#ocupacion p{
+				margin-left: 25px;
+				padding-top:8px; 
+			}
+
+			#facebook{
+				position: fixed;
+				right: 20px;
+				top: 85%;
+				display: flex;
+				flex-direction: column;
+				align-items:flex-end;
+				transition: background-color 0.8s linear 0.2s;
+				height: 60px;
+				width: 60px;
+				background-color:#2b81d1;
+				border-radius:100px;
+				animation-name: apertura;
+				animation-duration: .9s;
+	
+			}
+
+			#face{
+				height: 40px;
+				padding: 10px;
+	
+			}
+
+			#facebook:hover{
+				background-color: #276dae;
+			}
+
+			@keyframes apertura{
+				0%{
+					transform: scale(.1);
+				}	
+				100%{
+					transform: scale(1);
+				}
+			}
+
+			#skills{
+				margin-left: 85px;
+			}
+
+			.progreso h4{
+				margin-left: 120px;
+				margin-top: 20px;
+			}
+
+			progress{
+				margin-left: 50px;
+			}
+
+			section{
+				background-color: #2b81d1;
+				margin-left: 80px;
+				display: flex;
+				align-items: center;
+				width: 60%;
+				margin-top: 50px;
+				border-radius: 20px;
+				border: solid 4px #ec3030;
+				color: white;
+			}
+
+			article{
+				margin-left: 40px;
+				font-family: "Helvetica";
+			}
+
+			article p{
+				margin-left: 50px;
+			}
+
+			article img{
+				margin-left: 50px;
+			}
+
+			#contenedor{
+				display: flex;
+			}
+			article img{
+
+				margin-top: 10px;
+
+				width:250px;
+				height: 250px;
+	
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="facebook">
+		
+			<div><a target="_blank" href="https://www.facebook.com/josemiguel.requena.7" title="¡Contáctame!"><img id="face" src="face.png"></a></div>
+		</div>
+
+		<div id="contenedor">
+
+			<aside>
+				<div>
+					<img src="jose_miguel.jpg">
+					<br><br>
+					<h4>José Requena</h4>
+					<br>
+					<h4 id="ocupacion"><p>Estudiante</p></h4>
+					<br><br>
+					<h4 id="skills">Habilidades:</h4>
+				</div>	
+				<div>
+
+					<div class="progreso">
+						<h4>HTML</h4>
+						<progress value="50" max="100">
+					</div>
+
+					<div class="progreso">
+						<h4>CSS</h4>
+						<progress value="50" max="100">
+					</div>
+
+					<div class="progreso">
+						<h4>Lua</h4>
+						<progress value="20" max="100">
+					</div>
+					
+				</div>	
+			</aside>
+			<section>
+				<article>
+
+					<h4>Datos Personales:</h4>
+					<p>Nombres y apellidos: José Miguel Requena Esteves</p>
+					<p>Cédula de Identidad: 28.408.506</p>
+					<p>Unidad Curricular: Programación II</p>
+					<br>
+					<h4>Formación Acádemica:</h4>
+					<p> U.E.Colegio "La Cocuiza"</p>
+					<p>Universidad Nacional Experimental Rómulo Gallegos</p>
+					<br>
+					<h4>Experiencia Laboral:</h4>
+					<p>Sin experiencia laboral en el ámbito</p>
+					<br>
+					<h4>Proyectos Pasados:</h4>
+					<h5>Juego de Video "Bird", basado en el exitoso "Flappy Bird" (Desarrollado en Lua)</h5>
+					<img src="1.png">
+				</article>
+			</section>		
+		</div>
+		
+	</body>
 </html>
